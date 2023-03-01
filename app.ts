@@ -5,3 +5,7 @@ const person = {
 
 }
 
+for (const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase())
+}
+
