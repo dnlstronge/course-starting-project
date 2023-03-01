@@ -12,7 +12,7 @@ const person: {
 
 }
 
-person.role.push("running"); 
+person.role.push("running"); // push is an exemption and will work
 person.role[1] = 5 
 
 // this is allowed as the type is an array w/ either number or string
