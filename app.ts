@@ -1,34 +1,14 @@
-// const person: {
-//     name: string;
-//     age: number;
-//     hobbies: string[];
-//     role: [number, string]
+function combine(input1: number | string, input2: number | string) {
+  let result: number | string;
+  if (typeof input1 === "number" && typeof input2 === "number") {
+    result = input1 + input2;
+  } else {
+    result = input1.toString() + input2.toString();
+  }
+  return result;
+}
 
-// } = {
-//     name: "dan",
-//     age: 37,
-//     hobbies: ["football", "cooking"],
-//     role: [1, "Surf"] // this is a TUPLE (array of fixed length and type but needs explicitly set as such above)
-
-// }
-// const ADMIN = 0;
-// const READ_ONLY = 1;
-// const AUTHOR = 2;
-
-enum Role{ADMIN, READ_ONLY, AUTHOR};
-
-const person = {
-  name: "dan",
-  age: 37,
-  hobbies: ["football", "cooking"],
-  role: Role.ADMIN
-};
-
-//person.role.push("running");
-//person.role[1] = 5
-
-// this is allowed as the type is an array w/ either number or string
-
-// if you explicity set the type as a tuple TS should throw errors, try.....
-
-/* Typscript allows enums =====> enum {NEW, OLD}  */
+const combinedStrings = combine("meagles", "ducks");
+console.log(combinedStrings);
+const combinedNums = combine( 2, 3)
+console.log(combinedNums)
