@@ -1,10 +1,9 @@
 const person: object = {
-    name: "Dan",
-    age: 37
+  name: "Dan",
+  age: 37,
+};
 
-}
-
-console.log(person.nickname)
+console.log(person.nickname);
 
 /*
 JS objects have key value pairs:  {
@@ -29,9 +28,17 @@ there are subtle differences, this is generic - better to be more specific: obje
 .name / .age will not work, you need to be even more specific. see below: 
 */
 
-const individual: {name: string; age: number;} = {
-    name: "BigDave",
-    age: 44
+const individual: { name: string; age: number } = {
+  name: "BigDave",
+  age: 44,
+};
+
+/* I get it, its far more explicit in what the object is. but...it can all be inferred!!! so this is fine */
+
+const individual2 = {
+    name: "BigDave", // infers string
+    age: 44 // infers number
+
 }
 
-/* I get it, its far more explicit in what the object is. */
+/* Ahhh.... */
