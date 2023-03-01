@@ -11,15 +11,17 @@
 //     role: [1, "Surf"] // this is a TUPLE (array of fixed length and type but needs explicitly set as such above)
 
 // }
-const ADMIN = 0;
-const READ_ONLY = 1;
-const AUTHOR = 2;
+// const ADMIN = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+
+enum Role{ADMIN, READ_ONLY, AUTHOR};
 
 const person = {
   name: "dan",
   age: 37,
   hobbies: ["football", "cooking"],
-  role: ADMIN,
+  role: Role.ADMIN
 };
 
 //person.role.push("running");
