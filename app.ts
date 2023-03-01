@@ -25,5 +25,13 @@ const jsObject: {
     id: number;
 }
 
-there are subtle differences, this is generic - better to be more specific: object
+there are subtle differences, this is generic - better to be more specific: object, however 
+.name / .age will not work, you need to be even more specific. see below: 
 */
+
+const individual: {name: string; age: number;} = {
+    name: "BigDave",
+    age: 44
+}
+
+/* I get it, its far more explicit in what the object is. */
