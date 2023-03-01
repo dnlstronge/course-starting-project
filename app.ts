@@ -43,3 +43,13 @@ const individual2 = {
 
 /* Ahhh....so if you add an array of strings => string[] */
 /* or an array of strings and a number like above ==> string||number[] */
+
+/*if  empty upon init may want to explicitly set */
+
+let favouriteFoods: string[];
+favouriteFoods = ["pizza"] // throws no error
+
+let favouriteFoods2: any[];
+favouriteFoods2 = [24, "pizza", "anytype"]
+
+// see how any works
