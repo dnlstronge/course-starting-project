@@ -1,4 +1,4 @@
-const person = {
+const person: object = {
     name: "Dan",
     age: 37
 
@@ -25,5 +25,5 @@ const jsObject: {
     id: number;
 }
 
-there are subtle differences
+there are subtle differences, this is generic - better to be more specific: object
 */
