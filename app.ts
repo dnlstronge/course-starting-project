@@ -1,20 +1,14 @@
 const person = {
     name: "dan",
     age: 37,
-    hobbies: ["football", "cooking"]
+    hobbies: ["football", "cooking"],
+    role: [1, "Surf"] // this is a TUPLE (array of fixed length and type)
 
 }
 
-for (const hobby of person.hobbies) {
-    console.log(hobby.toUpperCase())
-}
+person.role.push("running"); 
+person.role[1] = 5 
 
-// try something that should throw an error: 
+// this is allowed as the type is an array w/ either number or string
 
-for (const hobby of person.hobbies) {
-    console.log(hobby.map())
-}
 
-// map is only available on arrays so this should give an error
-
-/* error: Property 'map' does not exist on type 'string'. */
