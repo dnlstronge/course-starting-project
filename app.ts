@@ -9,12 +9,12 @@ function combine(
     result = input1.toString() + input2.toString();
   }
   if(converted === "as_number") {
-    result = +input1 + +input2
+  return + result
   }
   if(converted === "as_string") {
-    result = input1.toString() + input2.toString()
+    return result.toString()
   }
-  return result;
+
 }
 
 const combinedStrings = combine(2, 5, "as_number");
