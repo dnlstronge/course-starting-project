@@ -1,11 +1,12 @@
 type combinable = number | string;
+type conversionDesc = "as_number" | "as_string"
 
 
 
 function combine(
-  input1: number | string,
-  input2: number | string,
-  converted: combinable
+  input1: combinable,
+  input2: combinable,
+  converted: conversionDesc
 ) {
   let result: number | string;
   if (
